@@ -3,36 +3,39 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.6</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.example.mq</groupId>
+        <artifactId>mq-demo</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.example.mq</groupId>
-    <artifactId>mq-demo</artifactId>
+
+    <groupId>com.example.rocketmq</groupId>
+    <artifactId>rocketmq-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>mq-demo</name>
-    <description>mq-demo</description>
-
-    <properties>
-        <java.version>8</java.version>
-    </properties>
-
-    <modules>
-        <module>rocketmq-demo</module>
-    </modules>
+    <name>rocketmq-demo</name>
+    <description>rocketmq-demo</description>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.apache.rocketmq</groupId>-->
+<!--            <artifactId>rocketmq-client</artifactId>-->
+<!--            <version>4.9.4</version>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
+            <version>2.0.4</version>
         </dependency>
     </dependencies>
 
